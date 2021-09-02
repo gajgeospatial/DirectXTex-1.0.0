@@ -1,0 +1,69 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "texconv", "texconv.vcxproj", "{1B8C9B34-94FD-3493-B44A-B0D035901A34}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E0E625CE-A22B-385F-B2DA-4FEC38A95C3F} = {E0E625CE-A22B-385F-B2DA-4FEC38A95C3F}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DirectXTex", "DirectXTex.vcxproj", "{E0E625CE-A22B-385F-B2DA-4FEC38A95C3F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "texassemble", "texassemble.vcxproj", "{8F7A66AE-0BD2-3A1A-B73E-E05FDEF2A233}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E0E625CE-A22B-385F-B2DA-4FEC38A95C3F} = {E0E625CE-A22B-385F-B2DA-4FEC38A95C3F}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "texdiag", "texdiag.vcxproj", "{CB1A0A95-C000-3FFE-8EBA-E23B0C501042}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E0E625CE-A22B-385F-B2DA-4FEC38A95C3F} = {E0E625CE-A22B-385F-B2DA-4FEC38A95C3F}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+		vs2019_Debug|x64 = vs2019_Debug|x64
+		vs2019_Release|x64 = vs2019_Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1B8C9B34-94FD-3493-B44A-B0D035901A34}.Debug|x64.ActiveCfg = Debug|x64
+		{1B8C9B34-94FD-3493-B44A-B0D035901A34}.Debug|x64.Build.0 = Debug|x64
+		{1B8C9B34-94FD-3493-B44A-B0D035901A34}.Release|x64.ActiveCfg = Release|x64
+		{1B8C9B34-94FD-3493-B44A-B0D035901A34}.Release|x64.Build.0 = Release|x64
+		{1B8C9B34-94FD-3493-B44A-B0D035901A34}.vs2019_Debug|x64.ActiveCfg = vs2019_Debug|x64
+		{1B8C9B34-94FD-3493-B44A-B0D035901A34}.vs2019_Debug|x64.Build.0 = vs2019_Debug|x64
+		{1B8C9B34-94FD-3493-B44A-B0D035901A34}.vs2019_Release|x64.ActiveCfg = vs2019_Release|x64
+		{1B8C9B34-94FD-3493-B44A-B0D035901A34}.vs2019_Release|x64.Build.0 = vs2019_Release|x64
+		{E0E625CE-A22B-385F-B2DA-4FEC38A95C3F}.Debug|x64.ActiveCfg = Debug|x64
+		{E0E625CE-A22B-385F-B2DA-4FEC38A95C3F}.Debug|x64.Build.0 = Debug|x64
+		{E0E625CE-A22B-385F-B2DA-4FEC38A95C3F}.Release|x64.ActiveCfg = Release|x64
+		{E0E625CE-A22B-385F-B2DA-4FEC38A95C3F}.Release|x64.Build.0 = Release|x64
+		{E0E625CE-A22B-385F-B2DA-4FEC38A95C3F}.vs2019_Debug|x64.ActiveCfg = vs2019_Debug|x64
+		{E0E625CE-A22B-385F-B2DA-4FEC38A95C3F}.vs2019_Debug|x64.Build.0 = vs2019_Debug|x64
+		{E0E625CE-A22B-385F-B2DA-4FEC38A95C3F}.vs2019_Release|x64.ActiveCfg = vs2019_Release|x64
+		{E0E625CE-A22B-385F-B2DA-4FEC38A95C3F}.vs2019_Release|x64.Build.0 = vs2019_Release|x64
+		{8F7A66AE-0BD2-3A1A-B73E-E05FDEF2A233}.Debug|x64.ActiveCfg = Debug|x64
+		{8F7A66AE-0BD2-3A1A-B73E-E05FDEF2A233}.Debug|x64.Build.0 = Debug|x64
+		{8F7A66AE-0BD2-3A1A-B73E-E05FDEF2A233}.Release|x64.ActiveCfg = Release|x64
+		{8F7A66AE-0BD2-3A1A-B73E-E05FDEF2A233}.Release|x64.Build.0 = Release|x64
+		{8F7A66AE-0BD2-3A1A-B73E-E05FDEF2A233}.vs2019_Debug|x64.ActiveCfg = vs2019_Debug|x64
+		{8F7A66AE-0BD2-3A1A-B73E-E05FDEF2A233}.vs2019_Debug|x64.Build.0 = vs2019_Debug|x64
+		{8F7A66AE-0BD2-3A1A-B73E-E05FDEF2A233}.vs2019_Release|x64.ActiveCfg = vs2019_Release|x64
+		{8F7A66AE-0BD2-3A1A-B73E-E05FDEF2A233}.vs2019_Release|x64.Build.0 = vs2019_Release|x64
+		{CB1A0A95-C000-3FFE-8EBA-E23B0C501042}.Debug|x64.ActiveCfg = Debug|x64
+		{CB1A0A95-C000-3FFE-8EBA-E23B0C501042}.Debug|x64.Build.0 = Debug|x64
+		{CB1A0A95-C000-3FFE-8EBA-E23B0C501042}.Release|x64.ActiveCfg = Release|x64
+		{CB1A0A95-C000-3FFE-8EBA-E23B0C501042}.Release|x64.Build.0 = Release|x64
+		{CB1A0A95-C000-3FFE-8EBA-E23B0C501042}.vs2019_Debug|x64.ActiveCfg = vs2019_Debug|x64
+		{CB1A0A95-C000-3FFE-8EBA-E23B0C501042}.vs2019_Debug|x64.Build.0 = vs2019_Debug|x64
+		{CB1A0A95-C000-3FFE-8EBA-E23B0C501042}.vs2019_Release|x64.ActiveCfg = vs2019_Release|x64
+		{CB1A0A95-C000-3FFE-8EBA-E23B0C501042}.vs2019_Release|x64.Build.0 = vs2019_Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9D29DBE2-1C7B-3DD1-9716-A8B26BCBA9CB}
+	EndGlobalSection
+EndGlobal

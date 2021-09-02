@@ -30,6 +30,8 @@
 
 using namespace DirectX;
 
+#pragma warning(disable : 4711)
+
 namespace
 {
     struct handle_closer { void operator()(HANDLE h) noexcept { if (h) CloseHandle(h); } };

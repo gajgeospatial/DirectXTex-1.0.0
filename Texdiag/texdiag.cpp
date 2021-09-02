@@ -20,6 +20,8 @@
 #define NOHELP
 #pragma warning(pop)
 
+#pragma warning(disable : 4711)
+
 #include <algorithm>
 #include <cassert>
 #include <cstddef>

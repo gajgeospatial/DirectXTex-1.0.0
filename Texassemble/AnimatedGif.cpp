@@ -24,6 +24,8 @@
 #define NOHELP
 #pragma warning(pop)
 
+#pragma warning(disable : 4711)
+
 #include <cstddef>
 #include <iterator>
 #include <memory>

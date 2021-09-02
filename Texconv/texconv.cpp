@@ -19,6 +19,7 @@
 #define NOHELP
 #pragma warning(pop)
 
+#pragma warning (disable : 4711)
 #include <ShlObj.h>
 
 #include <algorithm>
@@ -492,7 +493,7 @@ HRESULT __cdecl SaveToPortablePixMapHDR(
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 
-#pragma warning( disable : 4616 6211 )
+#pragma warning( disable : 4616 6211 4711)
 
 namespace
 {

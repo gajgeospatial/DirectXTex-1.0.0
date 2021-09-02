@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="N:\Development\Dev_Base\DirectXTex\msvc\CMakeFiles\2dd522c4c0c2f0cf93b57b8080c79ae2\INSTALL_force.rule">
+      <Filter>DirectXTex</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="DirectXTex">
+      <UniqueIdentifier>{A8CD2408-7654-317F-A490-D22AC8FBF4D0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

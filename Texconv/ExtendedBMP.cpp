@@ -32,6 +32,8 @@
 #include "DirectXTex.h"
 
 using namespace DirectX;
+#pragma warning(push)
+#pragma warning(disable : 4711)
 
 namespace
 {
@@ -191,3 +193,4 @@ HRESULT __cdecl LoadFromBMPEx(
 
     return hr;
 }
+#pragma warning(pop)

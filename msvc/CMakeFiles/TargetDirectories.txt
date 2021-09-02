@@ -1,0 +1,7 @@
+N:/Development/Dev_Base/DirectXTex/msvc/CMakeFiles/DirectXTex.dir
+N:/Development/Dev_Base/DirectXTex/msvc/CMakeFiles/texassemble.dir
+N:/Development/Dev_Base/DirectXTex/msvc/CMakeFiles/texconv.dir
+N:/Development/Dev_Base/DirectXTex/msvc/CMakeFiles/texdiag.dir
+N:/Development/Dev_Base/DirectXTex/msvc/CMakeFiles/INSTALL.dir
+N:/Development/Dev_Base/DirectXTex/msvc/CMakeFiles/ALL_BUILD.dir
+N:/Development/Dev_Base/DirectXTex/msvc/CMakeFiles/ZERO_CHECK.dir
