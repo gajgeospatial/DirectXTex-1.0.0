@@ -9,6 +9,7 @@
 // http://go.microsoft.com/fwlink/?LinkId=248926
 //--------------------------------------------------------------------------------------
 
+
 #pragma warning(push)
 #pragma warning(disable : 4005)
 #define WIN32_LEAN_AND_MEAN
@@ -20,6 +21,7 @@
 #pragma warning(pop)
 
 #pragma warning (disable : 4711)
+#include "ConvertATexture.h"
 #include <ShlObj.h>
 
 #include <algorithm>
@@ -1348,7 +1350,8 @@ namespace
 #pragma prefast(disable : 28198, "Command-line tool, frees all memory on exit")
 #endif
 
-int __cdecl wmain(_In_ int argc, _In_z_count_(argc) wchar_t* argv[])
+//int __cdecl wmain(_In_ int argc, _In_z_count_(argc) wchar_t* argv[])
+int ConvertATexture(uint32_t FileType, const char * Texture2Convert)
 {
     // Parameters and defaults
     size_t width = 0;
@@ -1360,7 +1363,7 @@ int __cdecl wmain(_In_ int argc, _In_z_count_(argc) wchar_t* argv[])
     TEX_FILTER_FLAGS dwConvert = TEX_FILTER_DEFAULT;
     TEX_COMPRESS_FLAGS dwCompress = TEX_COMPRESS_DEFAULT;
     TEX_FILTER_FLAGS dwFilterOpts = TEX_FILTER_DEFAULT;
-    uint32_t FileType = CODEC_DDS;
+//    uint32_t FileType = CODEC_DDS;
     uint32_t maxSize = 16384;
     int adapter = -1;
     float alphaThreshold = TEX_THRESHOLD_DEFAULT;
@@ -1384,6 +1387,7 @@ int __cdecl wmain(_In_ int argc, _In_z_count_(argc) wchar_t* argv[])
     // Set locale for output since GetErrorDesc can get localized strings.
     std::locale::global(std::locale(""));
 
+#if 0
     // Initialize COM (needed for WIC)
     HRESULT hr = CoInitializeEx(nullptr, COINIT_MULTITHREADED);
     if (FAILED(hr))
@@ -1391,11 +1395,22 @@ int __cdecl wmain(_In_ int argc, _In_z_count_(argc) wchar_t* argv[])
         wprintf(L"Failed to initialize COM (%08X%ls)\n", static_cast<unsigned int>(hr), GetErrorDesc(hr));
         return 1;
     }
+#else
+    HRESULT hr;
+#endif
 
     // Process command line
     uint64_t dwOptions = 0;
     std::list<SConversion> conversion;
+    SConversion conv = {};
+    std::string Texture2ConvertStr(Texture2Convert);
+    std::wstring temp = std::wstring(Texture2ConvertStr.begin(), Texture2ConvertStr.end());
+    wcscpy_s(conv.szSrc, MAX_PATH, temp.c_str());
 
+    conversion.push_back(conv);
+
+
+#if 0
     for (int iArg = 1; iArg < argc; iArg++)
     {
         PWSTR pArg = argv[iArg];
@@ -1927,6 +1942,7 @@ int __cdecl wmain(_In_ int argc, _In_z_count_(argc) wchar_t* argv[])
             conversion.push_back(conv);
         }
     }
+#endif
 
     if (conversion.empty())
     {
@@ -1995,6 +2011,7 @@ int __cdecl wmain(_In_ int argc, _In_z_count_(argc) wchar_t* argv[])
             wcscpy_s(szOutputDir, MAX_PATH, drive);
             wcscat_s(szOutputDir, MAX_PATH, dir);
         }
+
         TexMetadata info;
         std::unique_ptr<ScratchImage> image(new (std::nothrow) ScratchImage);
 

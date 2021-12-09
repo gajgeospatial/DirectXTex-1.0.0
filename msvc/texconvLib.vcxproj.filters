@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\TexconvLib\ConvertATexture.cpp">
+      <Filter>texconvLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TexconvLib\ExtendedBMP.cpp">
+      <Filter>texconvLib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TexconvLib\PortablePixMap.cpp">
+      <Filter>texconvLib</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="DirectXTex">
+      <UniqueIdentifier>{A8CD2408-7654-317F-A490-D22AC8FBF4D0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="texconvLib">
+      <UniqueIdentifier>{4294F8B2-A402-3F57-8F17-7D52B617F024}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\TexconvLib\ConvertATexture.h">
+      <Filter>texconvLib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\TexconvLib\texconv_Library.h">
+      <Filter>texconvLib</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
