@@ -416,12 +416,6 @@ if exist $(Dev_Base)\$(GDAL_DIR)\msvc\vc$(PlatformToolsetVersion)\$(Platform)\bi
     <ClCompile Include="..\TexconvLib\PortablePixMap.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include=".\DirectXTex.vcxproj">
-      <Project>{E0E625CE-A22B-385F-B2DA-4FEC38A95C3F}</Project>
-      <Name>DirectXTex</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="..\TexconvLib\ConvertATexture.h" />
     <ClInclude Include="..\TexconvLib\texconv_Library.h" />
   </ItemGroup>

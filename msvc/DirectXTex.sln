@@ -20,6 +20,9 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "texdiag", "texdiag.vcxproj"
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "texconvLib", "texconvLib.vcxproj", "{3D800FA0-62AA-451C-B294-FA0785E0796B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E0E625CE-A22B-385F-B2DA-4FEC38A95C3F} = {E0E625CE-A22B-385F-B2DA-4FEC38A95C3F}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

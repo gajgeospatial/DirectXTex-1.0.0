@@ -405,12 +405,6 @@
     <ClCompile Include="..\Texconv\ExtendedBMP.cpp" />
     <ClCompile Include="..\Texconv\PortablePixMap.cpp" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include=".\DirectXTex.vcxproj">
-      <Project>{E0E625CE-A22B-385F-B2DA-4FEC38A95C3F}</Project>
-      <Name>DirectXTex</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

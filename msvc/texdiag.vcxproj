@@ -397,18 +397,6 @@
   <ItemGroup>
     <ClCompile Include="..\Texdiag\texdiag.cpp" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include=".\ZERO_CHECK.vcxproj">
-      <Project>{817CB1A0-A72A-33A1-85C2-D3F94BBD07B3}</Project>
-      <Name>ZERO_CHECK</Name>
-      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </ProjectReference>
-    <ProjectReference Include=".\DirectXTex.vcxproj">
-      <Project>{E0E625CE-A22B-385F-B2DA-4FEC38A95C3F}</Project>
-      <Name>DirectXTex</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
